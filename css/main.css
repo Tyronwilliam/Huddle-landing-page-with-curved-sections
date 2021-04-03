@@ -1,0 +1,444 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100%;
+  font-size: 1.8em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+}
+
+header {
+  width: 100%;
+  height: 80px;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 20px 0 20px;
+  margin-bottom: 100px;
+}
+header img {
+  width: 130px;
+  height: 30px;
+}
+header a {
+  font-size: 1.7rem;
+  text-decoration: none;
+  padding: 8px 15px;
+  color: #ff8fd8;
+  border: 2px solid;
+  border-radius: 30px;
+  box-shadow: 0.5px 0.5px 3px #ff8fd8;
+}
+
+section {
+  width: 100%;
+  height: 1200px;
+  padding: 0 30px 0 30px;
+  background-image: url(../images/bg-section-top-mobile-1.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: bottom;
+}
+section h1 {
+  font-size: 3rem;
+  margin-bottom: 25px;
+  font-weight: 700;
+}
+section p {
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 23px;
+  margin-bottom: 35px;
+}
+section .btn {
+  margin-bottom: 100px;
+}
+section .btn a {
+  padding: 15px 40px;
+  text-decoration: none;
+  color: white;
+  background-color: #ff52bf;
+  border-radius: 30px;
+  font-size: 1.6rem;
+}
+section img {
+  width: 90%;
+  margin-bottom: 100px;
+}
+section .number {
+  width: 100%;
+  height: 340px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+}
+section .number .numb-one {
+  width: 170px;
+  height: 120px;
+  margin: 0 auto 50px auto;
+}
+section .number .numb-one img {
+  width: 40px;
+  height: 40px;
+  margin: 0;
+}
+section .number .numb-one h4 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+section .number .numb-two {
+  width: 170px;
+  height: 120px;
+  margin: 0 auto;
+}
+section .number .numb-two img {
+  width: 40px;
+  height: 40px;
+  margin: 0;
+}
+section .number .numb-two h4 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+main {
+  width: 100%;
+  height: 2350px;
+}
+main .card {
+  width: 100%;
+  height: 590px;
+  font-size: 1.4rem;
+  line-height: 23px;
+}
+main .card img {
+  width: 70%;
+  margin-bottom: 35px;
+}
+main .card h3 {
+  margin-bottom: 25px;
+}
+main .card .one {
+  background-color: #f5faff;
+  padding: 80px 30px 0 30px;
+}
+main .card .deux {
+  background-image: url(../images/bg-section-bottom-mobile-1.svg), url(../images/bg-section-top-mobile-2.svg);
+  background-repeat: no-repeat, no-repeat;
+  background-size: 100%, 100%;
+  background-position: top, bottom;
+  padding: 100px 30px 0 30px;
+}
+main .card .trois {
+  background-color: #f5faff;
+  padding: 100px 30px 0 30px;
+}
+main .card .four {
+  background-image: url(../images/bg-section-bottom-mobile-2.svg), url(../images/bg-footer-top-mobile.svg);
+  background-repeat: no-repeat, no-repeat;
+  background-size: 100%, 100%;
+  background-position: top, bottom;
+  padding: 150px 30px 0 30px;
+}
+main .card .four h2 {
+  font-size: 2.5rem;
+  line-height: 40px;
+  font-weight: 700;
+  margin-bottom: 35px;
+}
+main .card .four a {
+  padding: 15px 40px;
+  text-decoration: none;
+  color: white;
+  background-color: #ff52bf;
+  border-radius: 30px;
+  font-size: 1.6rem;
+}
+
+footer {
+  color: white;
+  background-color: #00252e;
+  width: 100%;
+  height: 800px;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: flex-end;
+  padding: 50px 30px 0 30px;
+  text-align: left;
+}
+footer h2 {
+  margin-bottom: 25px;
+}
+footer p {
+  line-height: 30px;
+  margin-bottom: 35px;
+  font-size: 1.48rem;
+}
+footer input {
+  width: 100%;
+  height: 35px;
+  border-radius: 5px;
+  margin-bottom: 35px;
+}
+footer .btn-news {
+  text-align: right;
+  margin-bottom: 100px;
+}
+footer .btn-news a {
+  padding: 15px 40px;
+  text-decoration: none;
+  color: white;
+  background-color: #ff52bf;
+  border-radius: 5px;
+}
+footer .infos {
+  width: 100%;
+}
+footer .infos .logo-footer {
+  width: 100%;
+  height: 50px;
+}
+footer .infos .logo-footer .lg {
+  width: 200px;
+  -webkit-filter: invert(100%) grayscale(100%);
+  filter: grayscale(100%) invert(100%);
+}
+footer .infos .contact {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+footer .infos .contact img {
+  width: 20px;
+  height: 20px;
+  flex: 0 1;
+  margin-top: 5px;
+}
+footer .infos .contact p {
+  text-align: left;
+  flex: 0 0 85%;
+  margin: 0 0 0 20px;
+}
+footer .infos .social-media {
+  width: 100%;
+  height: 50px;
+  margin-top: 35px;
+}
+footer .infos .social-media img {
+  filter: grayscale(100%) invert(100%);
+  width: 30px;
+}
+footer .infos .social-media img:not(:first-child) {
+  margin-left: 10px;
+}
+
+@media screen and (min-width: 460px) {
+  main {
+    height: 2500px;
+  }
+  main .card img {
+    width: 60%;
+  }
+  main .card .deux {
+    height: 750px;
+  }
+
+  footer .infos .contact p {
+    flex: 0 0 90%;
+  }
+}
+@media screen and (min-width: 660px) {
+  footer .infos .contact p {
+    flex: 0 0 93%;
+  }
+}
+@media screen and (min-width: 710px) {
+  main .card img {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 860px) {
+  section {
+    background-image: url(../images/bg-section-top-desktop-1.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: bottom;
+    height: 1400px;
+  }
+  section p {
+    display: block;
+    width: 450px;
+    margin: 0 auto 40px auto;
+  }
+  section img {
+    width: 80%;
+  }
+  section .number {
+    width: 500px;
+    margin: 0 auto;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  section .number .numb-one {
+    margin: 0;
+  }
+  section .number .numb-one h4 {
+    font-size: 5rem;
+  }
+  section .number .numb-two {
+    margin: 0;
+  }
+  section .number .numb-two h4 {
+    font-size: 5rem;
+  }
+  section .number .numb-two p {
+    display: inline-block;
+    width: 150px;
+  }
+
+  main {
+    height: 1899px;
+  }
+  main .card {
+    width: 100%;
+    height: 400px;
+  }
+  main .card .txt-card {
+    text-align: left;
+    width: 350px;
+  }
+  main .card img {
+    width: 360px;
+    height: 260px;
+  }
+  main .card h3 {
+    font-size: 3rem;
+    font-weight: 700;
+  }
+  main .card .one {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+  }
+  main .card .deux {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 650px;
+    background-image: url(../images/bg-section-bottom-desktop-1.svg), url(../images/bg-section-top-desktop-2.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-size: 100%, 100%;
+    background-position: top, bottom;
+  }
+  main .card .trois {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+  }
+  main .card .four {
+    background-image: url(../images/bg-section-bottom-desktop-2.svg), url(../images/bg-footer-top-desktop.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-size: 100%, 100%;
+    background-position: top, bottom;
+    height: 450px;
+    text-align: center;
+  }
+
+  footer {
+    padding: 150px 30px 0 30px;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  footer .text-news {
+    width: 350px;
+  }
+  footer .text-logo {
+    width: 350px;
+  }
+  footer input {
+    width: 50%;
+  }
+  footer .btn-news {
+    text-align: left;
+  }
+  footer .infos {
+    width: 600px;
+  }
+  footer .infos .contact p {
+    flex: 0 0 90%;
+  }
+}
+@media screen and (min-width: 1012px) {
+  footer .infos .contact p {
+    flex: 0 0 93%;
+  }
+}
+@media screen and (min-width: 1156px) {
+  section {
+    height: 1400px;
+  }
+  section img {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 1440px) {
+  section {
+    height: 1400px;
+  }
+  section h1 {
+    font-size: 4rem;
+  }
+
+  main {
+    height: 2000px;
+  }
+  main .card .four {
+    height: 550px;
+    padding-top: 200px;
+  }
+
+  footer {
+    height: 600px;
+  }
+  footer .news {
+    width: 600px;
+  }
+  footer .news .btn-input {
+    display: flex;
+    align-items: center;
+  }
+  footer input {
+    width: 330px;
+    height: 55px;
+    margin: 0;
+  }
+  footer .btn-news {
+    margin: 0 0 0 30px;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

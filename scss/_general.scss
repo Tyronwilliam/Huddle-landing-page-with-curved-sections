@@ -1,0 +1,227 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-size: 62.5%;
+}
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100%;
+  font-size: 1.8em;
+  @include flexcolmid;
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+}
+
+header {
+  width: 100%;
+  height: 80px;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 20px 0 20px;
+  margin-bottom: 100px;
+
+  img {
+    width: 130px;
+    height: 30px;
+  }
+  a {
+    @include boutonheader;
+  }
+}
+
+section {
+  width: 100%;
+  height: 1200px;
+  padding: $paddingeneral;
+  @include backsection;
+
+  h1 {
+    font-size: 3rem;
+    margin-bottom: $margintitle;
+    font-weight: $weight700;
+  }
+  p {
+    font-size: 1.5rem;
+    font-weight: $weight400;
+    line-height: $lineheight;
+    margin-bottom: $margintxt;
+  }
+  .btn {
+    margin-bottom: $marginbouton;
+    a {
+      @include boutontopbot;
+      font-size: 1.6rem;
+    }
+  }
+  img {
+    width: 90%;
+    margin-bottom: $marginbouton;
+  }
+  .number {
+    width: 100%;
+    height: 340px;
+    @include flexcolmid;
+    text-align: left;
+    .numb-one {
+      width: 170px;
+      height: 120px;
+      margin: 0 auto 50px auto;
+      img {
+        width: 40px;
+        height: 40px;
+        margin: 0;
+      }
+      h4 {
+        font-size: 3rem;
+        font-weight: $weight700;
+      }
+    }
+    .numb-two {
+      width: 170px;
+      height: 120px;
+      margin: 0 auto;
+      img {
+        width: 40px;
+        height: 40px;
+        margin: 0;
+      }
+      h4 {
+        font-size: 3rem;
+        font-weight: $weight700;
+      }
+    }
+  }
+}
+main {
+  width: 100%;
+  height: 2350px;
+  .card {
+    width: 100%;
+    height: 590px;
+    font-size: $fontsizemob;
+    line-height: $lineheight;
+
+    img {
+      width: 70%;
+      margin-bottom: $margintxt;
+    }
+    h3 {
+      margin-bottom: $margintitle;
+    }
+    .one {
+      background-color: hsl(207, 100%, 98%);
+      padding: 80px 30px 0 30px;
+    }
+    .deux {
+      @include backcarddeux;
+      padding: 100px 30px 0 30px;
+    }
+    .trois {
+      background-color: hsl(207, 100%, 98%);
+      padding: 100px 30px 0 30px;
+    }
+    .four {
+      @include backcardfourtop;
+
+      padding: 150px 30px 0 30px;
+      h2 {
+        font-size: 2.5rem;
+        line-height: 40px;
+        font-weight: $weight700;
+        margin-bottom: $margintxt;
+      }
+
+      a {
+        @include boutontopbot;
+        font-size: 1.6rem;
+      }
+    }
+  }
+}
+
+footer {
+  color: white;
+  background-color: $footercolor;
+  width: 100%;
+  height: 800px;
+  @include flexreverse;
+  padding: 50px 30px 0 30px;
+  text-align: left;
+
+  h2 {
+    margin-bottom: $margintitle;
+  }
+  p {
+    line-height: $linefooter;
+    margin-bottom: $margintxt;
+    font-size: 1.48rem;
+  }
+  input {
+    width: 100%;
+    height: 35px;
+    border-radius: 5px;
+    margin-bottom: $margintxt;
+  }
+  .btn-news {
+    text-align: right;
+    margin-bottom: $marginbouton;
+    a {
+      @include btnfoot;
+    }
+  }
+  .infos {
+    width: 100%;
+
+    .logo-footer {
+      width: 100%;
+      height: 50px;
+      // background-color: whitesmoke;
+      .lg {
+        width: 200px;
+        -webkit-filter: invert(100%) grayscale(100%);
+        filter: grayscale(100%) invert(100%);
+      }
+    }
+
+    .contact {
+      width: 100%;
+      height: 80px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      img {
+        width: 20px;
+        height: 20px;
+        flex: 0 1;
+        margin-top: 5px;
+      }
+      p {
+        text-align: left;
+        flex: 0 0 85%;
+        margin: 0 0 0 20px;
+      }
+    }
+    .social-media {
+      width: 100%;
+      height: 50px;
+      margin-top: $margintxt;
+
+      img {
+        filter: grayscale(100%) invert(100%);
+        width: 30px;
+      }
+      img:not(:first-child) {
+        margin-left: 10px;
+      }
+    }
+  }
+}
